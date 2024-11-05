@@ -17,11 +17,11 @@ Ejemplo:
 Mensaje: "HOLA"
 Desplazamiento: 3
 Cifrado:
-H → K
-O → R
-L → O
-A → D
-Resultado: "KROD"
+ H → K
+ O → R
+ L → O
+ A → D
+ Resultado: "KROD"
 
 # Cifrado Vigenère
 El Cifrado Vigenère es un método de cifrado que utiliza una palabra clave para determinar el desplazamiento de cada letra en el mensaje.
@@ -35,14 +35,14 @@ Encuentra el desplazamiento correspondiente a la letra de la clave.
 Desplaza la letra del mensaje según la letra de la clave.
 Ejemplo:
 
-Mensaje: "HOLA"
-Clave: "CLAVE" → "CLAV" (se recorta)
-Cifrado:
-H (desplazamiento C = 2) → J
-O (desplazamiento L = 11) → Z
-L (desplazamiento A = 0) → L
-A (desplazamiento V = 21) → V
-Resultado: "JZLV"
+ Mensaje: "HOLA"
+ Clave: "CLAVE" → "CLAV" (se recorta)
+ Cifrado:
+ H (desplazamiento C = 2) → J
+ O (desplazamiento L = 11) → Z
+ L (desplazamiento A = 0) → L
+ A (desplazamiento V = 21) → V
+ Resultado: "JZLV"
 Resumen
 Cifrado César: Desplazamiento fijo en el alfabeto.
 Cifrado Vigenère: Desplazamiento variable basado en una palabra clave.
