@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Cifrado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+       
+        
+        <h1>Cifrador en línea</h1>
+        <img src="candado.png">
+        
+        <label for="mensaje">Agrega el texto:</label>
+        <textarea id="mensaje" placeholder="Escribe el texto aquí" rows="6"></textarea>
+        
+        <label for="metodo">Método de Cifrado:</label>
+        <select id="metodo" onchange="mostrarParametro()">
+            <option value="cesar">Cifrado César</option>
+            <option value="vigenere">Cifrado Vigenère</option>
+        </select>
+        
+        <div id="parametro-cesar">
+            <label for="desplazamiento">Desplazamiento (César):</label>
+            <input type="number" id="desplazamiento" value="3">
+        </div>
+        
+        <div id="parametro-vigenere" style="display: none;">
+            <label for="clave">Clave (Vigenère):</label>
+            <input type="text" id="clave" placeholder="Escribe la clave aquí">
+        </div>
+        
+        <button onclick="cifrar()">Cifrar</button>
+        <button onclick="descifrar()">Descifrar</button>
+        
+        <h2>Resultado:</h2>
+        <p id="resultado"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
