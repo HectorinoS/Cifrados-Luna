@@ -3,46 +3,40 @@ Esta página de cifrado fue creada para facilitar la encriptación y desencripta
 
 El Cifrado César, que utiliza un desplazamiento fijo de letras, y el Cifrado Vigenère, que emplea una clave variable, son técnicas fundamentales en la historia de la criptografía. Esta página tiene como objetivo proporcionar una experiencia educativa sobre cómo funcionan estos métodos, así como ofrecer una plataforma práctica para experimentar con el cifrado de texto.
 
-# Cifrado César
-El Cifrado César es una técnica de cifrado por sustitución donde cada letra del texto se desplaza un número fijo de posiciones en el alfabeto.
+## Métodos de Cifrado
 
-Cómo se hace:
+### Cifrado César
 
-Elige un número de desplazamiento (por ejemplo, 3).
-Para cada letra del mensaje original:
-Desplaza la letra hacia adelante en el alfabeto según el número elegido.
-Si el desplazamiento lleva a una letra que excede 'Z', se vuelve a comenzar desde 'A'.
-Ejemplo:
+El Cifrado César desplaza cada letra del mensaje original un número fijo de posiciones en el alfabeto. 
 
+**Cómo se hace:**
+1. **Elige un número de desplazamiento** (por ejemplo, 3).
+2. **Para cada letra del mensaje**:
+   - Desplaza la letra hacia adelante según el número elegido.
+   - Si el desplazamiento lleva a una letra que excede 'Z', se vuelve a comenzar desde 'A'.
+
+**Ejemplo:**
 - Mensaje: "HOLA"
 - Desplazamiento: 3
-- Cifrado:
- H → K
- O → R
- L → O
- A → D
- Resultado: "KROD"
+- Cifrado: "KROD"
 
-# Cifrado Vigenère
-El Cifrado Vigenère es un método de cifrado que utiliza una palabra clave para determinar el desplazamiento de cada letra en el mensaje.
+### Cifrado Vigenère
 
-Cómo se hace:
+El Cifrado Vigenère utiliza una palabra clave que determina el desplazamiento de cada letra en el mensaje.
 
-Elige una clave (por ejemplo, "CLAVE").
-Repita la clave tantas veces como sea necesario para que tenga la misma longitud que el mensaje.
-Para cada letra del mensaje:
-Encuentra el desplazamiento correspondiente a la letra de la clave.
-Desplaza la letra del mensaje según la letra de la clave.
-Ejemplo:
+**Cómo se hace:**
+1. **Elige una clave** (por ejemplo, "CLAVE").
+2. **Repite la clave** para que tenga la misma longitud que el mensaje.
+3. **Para cada letra del mensaje**:
+   - Encuentra el desplazamiento correspondiente a la letra de la clave.
+   - Desplaza la letra del mensaje según la letra de la clave.
 
- Mensaje: "HOLA"
- Clave: "CLAVE" → "CLAV" (se recorta)
- Cifrado:
- H (desplazamiento C = 2) → J
- O (desplazamiento L = 11) → Z
- L (desplazamiento A = 0) → L
- A (desplazamiento V = 21) → V
- Resultado: "JZLV"
-Resumen
-Cifrado César: Desplazamiento fijo en el alfabeto.
-Cifrado Vigenère: Desplazamiento variable basado en una palabra clave.
+**Ejemplo:**
+- Mensaje: "HOLA"
+- Clave: "CLAV"
+- Cifrado: "JZLV"
+
+## Uso
+
+Para usar la herramienta, simplemente ingresa tu mensaje, selecciona el método de cifrado y proporciona el desplazamiento o la clave según corresponda. Presiona "Cifrar" para obtener el resultado.
+
