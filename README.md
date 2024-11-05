@@ -14,9 +14,9 @@ Desplaza la letra hacia adelante en el alfabeto según el número elegido.
 Si el desplazamiento lleva a una letra que excede 'Z', se vuelve a comenzar desde 'A'.
 Ejemplo:
 
-Mensaje: "HOLA"
-Desplazamiento: 3
-Cifrado:
+- Mensaje: "HOLA"
+- Desplazamiento: 3
+- Cifrado:
  H → K
  O → R
  L → O
